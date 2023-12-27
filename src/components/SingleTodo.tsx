@@ -3,7 +3,7 @@ import { Todo } from "../models/model";
 import { CiEdit } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
 import { MdDoneOutline } from "react-icons/md";
-import { CiCircleCheck } from "react-icons/ci";
+import { FaCheckCircle } from "react-icons/fa";
 import { Draggable } from "react-beautiful-dnd";
 type Props = {
   todo: Todo;
@@ -64,7 +64,7 @@ const SingleTodo: React.FC<Props> = ({ index, todo, todos, setTodos }) => {
             {/* add in submit */}
             {edit ? (
               <span className="icon" onClick={(e) => handleEdit(e, todo.id)}>
-                <CiCircleCheck />
+                <FaCheckCircle />
               </span>
             ) : (
               <span
